@@ -1,20 +1,33 @@
 package javafx;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
+import java.util.Observable;
+
 public class ContactController {
     public TextField txtName;
-    public Text strName;
+//    public Text strName;
     public TextField txtEmail;
-    public Text strEmail;
+    public ListView<Contact> lv;
+//    public Text strEmail;
+
+    private ObservableList<Contact> ls = FXCollections.observableArrayList();
 
     public void submit(ActionEvent actionEvent) {
         String name = txtName.getText();
         String email = txtEmail.getText();
         // System.out.println("Submitted..."+name);
-        strName.setText(name);
-        strEmail.setText(email);
+        Contact ct = new Contact(name,email);
+        ls.add(ct);
+        print();
+    }
+
+    public void print(){
+        lv.setItems(ls);
     }
 }

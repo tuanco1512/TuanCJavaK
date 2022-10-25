@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
 <?import javafx.scene.text.Text?>
-<Pane fx:controller="javafxStudentForm.StudentFormController" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" minHeight="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxStudentForm.StudentFormController">
     <children>
         <Text layoutX="252.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Form" />
         <TextField fx:id="txtName" layoutX="41.0" layoutY="85.0" promptText="Name" />
@@ -15,11 +16,7 @@
         <TextField fx:id="txtAddress" layoutX="41.0" layoutY="221.0" promptText="Address" />
         <TextField fx:id="txtAge" layoutX="41.0" layoutY="294.0" promptText="Age" />
         <TextField fx:id="txtPhone" layoutX="41.0" layoutY="367.0" promptText="Phone" />
-        <Button onAction="#submit" layoutX="144.0" layoutY="435.0" mnemonicParsing="false" text="Submit" />
-        <Text fx:id="strName" layoutX="334.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ho va ten" />
-        <Text fx:id="strEmail" layoutX="334.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
-        <Text fx:id="strAddress" layoutX="334.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dia chi" />
-        <Text fx:id="strAge" layoutX="334.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuoi" />
-        <Text fx:id="strPhone" layoutX="334.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sdt" />
+        <Button layoutX="144.0" layoutY="435.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <ListView fx:id="lvS" layoutX="288.0" layoutY="71.0" prefHeight="239.0" prefWidth="270.0" />
     </children>
 </Pane>

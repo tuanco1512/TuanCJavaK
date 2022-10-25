@@ -1,6 +1,9 @@
 package javafxStudentForm;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
@@ -8,15 +11,18 @@ import java.awt.*;
 
 public class StudentFormController {
     public TextField txtName;
-    public Text strName;
+//    public Text strName;
     public TextField txtEmail;
-    public Text strEmail;
+//    public Text strEmail;
     public TextField txtAddress;
-    public Text strAddress;
+//    public Text strAddress;
     public TextField txtAge;
-    public Text strAge;
+//    public Text strAge;
     public TextField txtPhone;
-    public Text strPhone;
+//    public Text strPhone;
+    public ListView<Student> lvS;
+
+    private ObservableList<Student> ls = FXCollections.observableArrayList();
 
     public void submit(ActionEvent actionEvent){
         String name = txtName.getText();
@@ -24,10 +30,12 @@ public class StudentFormController {
         String address = txtAddress.getText();
         String age = txtAge.getText();
         String phone = txtPhone.getText();
-        strName.setText(name);
-        strEmail.setText(email);
-        strAddress.setText(address);
-        strAge.setText(age);
-        strPhone.setText(phone);
+        Student s = new Student(name,email,address,age,phone);
+        ls.add(s);
+        print();
+    }
+
+    public void print(){
+        lvS.setItems(ls);
     }
 }
