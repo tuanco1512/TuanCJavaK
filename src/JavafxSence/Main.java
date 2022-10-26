@@ -1,4 +1,4 @@
-package javafx;
+package JavafxSence;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,18 +7,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
     public static Stage rootStage;
-
-    public static void main(String[] args) {
-        launch(args);
-    }
+    public static void main(String[] args) { launch(args);}
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         rootStage = primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("demo.fxml"));
-        primaryStage.setTitle("T2204M JavaFX");
+        Parent root = FXMLLoader.load(getClass().getResource("List/List.fxml"));
+        primaryStage.setTitle("StudentForm JavaFX Scene");
         primaryStage.setScene(new Scene(root,800,600));
         primaryStage.show();
     }

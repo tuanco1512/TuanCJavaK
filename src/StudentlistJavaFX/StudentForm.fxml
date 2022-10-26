@@ -11,8 +11,9 @@
       <TextField fx:id="Email" layoutX="53.0" layoutY="176.0" promptText="Email" />
       <TextField fx:id="Score" layoutX="53.0" layoutY="231.0" promptText="Score" />
       <Button layoutX="128.0" layoutY="279.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <Button layoutX="128.0" layoutY="379.0" mnemonicParsing="false" onAction="#goToContact" text="goToContact" />
       <ListView fx:id="lvS" layoutX="300.0" layoutY="66.0" prefHeight="244.0" prefWidth="243.0" />
-      <Button layoutX="300.0" layoutY="335.0" mnemonicParsing="false" text="Sort by Name" />
+      <Button layoutX="300.0" layoutY="335.0" mnemonicParsing="false" onAction="#sortByName"  text="Sort by Name" />
       <Button layoutX="456.0" layoutY="335.0" mnemonicParsing="false" text="Sort by Score" />
       <Text layoutX="219.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Form List" wrappingWidth="162.1171875">
          <font>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavafxSence.Form.FormController">
+   <children>
+      <Button onAction="#backToList" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" text="Back To List">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button onAction="#submit" layoutX="383.0" layoutY="298.0" mnemonicParsing="false" text="Submit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="266.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Form">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Name" layoutX="152.0" layoutY="120.0" prefHeight="47.0" prefWidth="298.0" />
+      <TextField fx:id="Score" layoutX="152.0" layoutY="235.0" prefHeight="40.0" prefWidth="298.0" />
+      <Text layoutX="152.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Name">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="152.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Score">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
