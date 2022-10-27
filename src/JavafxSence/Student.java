@@ -25,5 +25,5 @@ public class Student {
         this.score = score;
     }
 
-    public String toString(){return this.name+" \t"+this.score;}
+    public String toString(){return this.name+"\t\t"+this.score;}
 }
