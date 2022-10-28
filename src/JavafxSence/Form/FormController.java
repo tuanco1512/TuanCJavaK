@@ -8,11 +8,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 
 public class FormController {
     public TextField Name;
     public TextField Score;
+    public ComboBox<String> cbGender;
+
+
     public void backToList() throws Exception {
         Parent listScene = FXMLLoader.load(getClass().getResource("../list/list.fxml"));
         Scene sc = new Scene(listScene,800,600);

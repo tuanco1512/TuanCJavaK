@@ -31,8 +31,11 @@ public class ListController {
         lv.setItems(ls);
     }
 
-    public void edit(ActionEvent actionEvent) {
+    public void edit(ActionEvent actionEvent) throws Exception {
 
+        Parent editForm = FXMLLoader.load(getClass().getResource("../Edit/Edit.fxml"));
+        Scene sc = new Scene(editForm,800,600);
+        Main.rootStage.setScene(sc);
     }
 
     public void sortByName(ActionEvent actionEvent) {
