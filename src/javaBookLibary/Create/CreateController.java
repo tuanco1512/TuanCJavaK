@@ -15,6 +15,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class CreateController implements Initializable {
@@ -22,9 +23,9 @@ public class CreateController implements Initializable {
     public TextField txtName;
     public TextField txtAuthor;
     public TextField txtPrice;
-    public ComboBox cbPublisher;
+    public ComboBox<String> cbPublisher;
     public TextField txtQty;
-    public ComboBox cbType;
+    public ComboBox<String> cbType;
 
     @Override
     public void initialize(URL location, ResourceBundle resource){
@@ -41,18 +42,18 @@ public class CreateController implements Initializable {
     }
 
     public void backToGallery(ActionEvent actionEvent)throws Exception {
-        Parent listScene = FXMLLoader.load(getClass().getResource("../List/List.fxml"));
+        Parent listScene = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../List/List.fxml")));
         Scene sc = new Scene(listScene,600,400);
         Main.rootStage.setScene(sc);
     }
 
-    public void addToGallery(ActionEvent actionEvent)throws Exception {
+    public void addToGallery(ActionEvent actionEvent) {
         try {
             Integer q = Integer.parseInt(txtQty.getText());
             Integer p = Integer.parseInt(txtPrice.getText());
-            if (q < 0 || p < 0)
+            if (q <= 0 || p <= 0)
                 throw new Exception("So luong hoac gia nhap vao khong hop le");
-            Book b = new Book(txtCode.getText(),txtName.getText(),txtAuthor.getText(),cbPublisher.getValue().toString(),cbType.getValue().toString(),p,q);
+            Book b = new Book(txtCode.getText(),txtName.getText(),txtAuthor.getText(),cbPublisher.getValue(),cbType.getValue(),p,q);
             ListController.lb.add(b);
             backToGallery(null);
         }catch (Exception e){

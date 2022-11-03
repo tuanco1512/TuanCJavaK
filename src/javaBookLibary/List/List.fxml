@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaBookLibary.List.ListController">
    <children>
-      <ListView layoutX="48.0" layoutY="112.0" prefHeight="213.0" prefWidth="504.0" />
+      <ListView fx:id="lvB" layoutX="48.0" layoutY="112.0" prefHeight="213.0" prefWidth="504.0" />
       <Text layoutX="273.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gallery">
          <font>
             <Font size="18.0" />
