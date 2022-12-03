@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaBookLibary.Create.CreateController">
+   <children>
+      <TextField fx:id="txtCode" layoutX="221.0" layoutY="70.0" promptText="Book code">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtName" layoutX="81.0" layoutY="131.0" promptText="Book name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAuthor" layoutX="321.0" layoutY="131.0" promptText="Author">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPrice" layoutX="81.0" layoutY="203.0" promptText="Price">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cbPublisher" layoutX="321.0" layoutY="273.0" prefHeight="37.0" prefWidth="200.0" promptText="Publisher" />
+      <TextField fx:id="txtQty" layoutX="321.0" layoutY="203.0" promptText="Qty">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cbType" layoutX="81.0" layoutY="273.0" prefHeight="37.0" prefWidth="200.0" promptText="Book type" />
+      <Text layoutX="266.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Book" wrappingWidth="110.13671875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button onAction="#backToGallery" layoutX="18.0" layoutY="349.0" mnemonicParsing="false" text="Back to Gallery">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button onAction="#addToGallery" layoutX="458.0" layoutY="349.0" mnemonicParsing="false" text="Add to Gallery">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

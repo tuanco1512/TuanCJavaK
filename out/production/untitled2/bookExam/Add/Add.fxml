@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookExam.Add.AddController">
+   <children>
+      <Text layoutX="171.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter book's details">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <TextField layoutX="176.0" layoutY="84.0" promptText="Book ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="176.0" layoutY="142.0" promptText="Book Title">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="176.0" layoutY="256.0" promptText="Price">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="176.0" layoutY="200.0" promptText="Author">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="266.0" layoutY="322.0" mnemonicParsing="false" text="Save">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

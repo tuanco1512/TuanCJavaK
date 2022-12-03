@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaBookLibary.Edit.EditController">
+   <children>
+      <Text layoutX="262.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Book">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCode" layoutX="199.0" layoutY="56.0" prefHeight="24.0" prefWidth="203.0" promptText="Book code">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtQty" layoutX="324.0" layoutY="190.0" prefHeight="24.0" prefWidth="203.0" promptText="Qty">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPrice" layoutX="73.0" layoutY="190.0" prefHeight="24.0" prefWidth="203.0" promptText="Price">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAuthor" layoutX="324.0" layoutY="125.0" prefHeight="24.0" prefWidth="203.0" promptText="Author">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtName" layoutX="73.0" layoutY="125.0" prefHeight="24.0" prefWidth="203.0" promptText="Book name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button layoutX="426.0" layoutY="334.0" mnemonicParsing="false" onAction="#saveChanges" text="Save Changes">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="48.0" layoutY="334.0" mnemonicParsing="false" onAction="#backToGallery" text="Back to Gallery">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cbPublisher" layoutX="324.0" layoutY="254.0" prefHeight="37.0" prefWidth="203.0" promptText="Publisher" />
+      <ComboBox fx:id="cbType" layoutX="74.0" layoutY="254.0" prefHeight="37.0" prefWidth="203.0" promptText="Book type" />
+   </children>
+</AnchorPane>
